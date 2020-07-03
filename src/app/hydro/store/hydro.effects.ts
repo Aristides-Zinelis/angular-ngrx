@@ -20,7 +20,7 @@ export class HydroEffects {
     this.actions$.pipe(
       ofType(riverActionTypes.createRiver),
       concatMap((action) => this.hydroService.createRiver(action.river)),
-      tap(() => this.router.navigateByUrl('/courses'))
+      tap(() => this.router.navigateByUrl('/hydro'))
     ),
     {dispatch: false}
   );

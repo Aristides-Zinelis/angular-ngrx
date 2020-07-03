@@ -3,4 +3,5 @@ export interface River {
   name: string;
   countrySource: string;
   length: string;
+  photo: string;
 }

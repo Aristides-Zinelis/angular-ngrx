@@ -3,8 +3,9 @@
       <thead>
         <tr>
           <th scope="col">Name</th>
-          <th scope="col">Description</th>
-          <th scope="col">Operations</th>
+          <th scope="col">Country Source</th>
+          <th scope="col">Length</th>
+          <th scope="col">Photo</th>
         </tr>
       </thead>
       <tbody>
@@ -12,6 +13,7 @@
           <td>{{ river.name }}</td>
           <td>{{ river.countrySource }}</td>
           <td>{{ river.length }}</td>
+          <td>{{ river.photo }}</td>
           <td>
             <button (click)="showUpdateForm(river)" class="btn btn-primary" style="margin: 5px">Update</button>
             <button (click)="deleteRiver(river.id)" class="btn btn-danger" style="margin: 5px">Delete</button>

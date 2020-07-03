@@ -9,10 +9,11 @@ import { StoreModule } from '@ngrx/store';
 import { HydroEffects } from './store/hydro.effects';
 import { hydroReducer } from  './store/hydro.reducers';
 import { HttpClientModule } from '@angular/common/http';
+import { CreateRiverComponent } from './component/create-river.component';
 
 
 @NgModule({
-  declarations: [HydroComponent],
+  declarations: [HydroComponent, CreateRiverComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -22,6 +23,6 @@ import { HttpClientModule } from '@angular/common/http';
     EffectsModule.forFeature([HydroEffects])
   ],
   providers: [HydroService],
-  exports: [HydroComponent]
+  exports: [HydroComponent, CreateRiverComponent]
 })
 export class HydroModule { }

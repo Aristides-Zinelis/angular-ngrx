@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HydroResolver } from './hydro/hydro.resolver';
 
 
-const routes: Routes = [{ path: 'hydro', loadChildren: () => import('./hydro/hydro.module').then(m => m.HydroModule), resolve: {
+const routes: Routes = [{ path: '', loadChildren: () => import('./hydro/hydro.module').then(m => m.HydroModule), resolve: {
   courses: HydroResolver
 } }];
 
